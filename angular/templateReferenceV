@@ -1,0 +1,6 @@
+<input #inputInfo type="text" value="Javascript" name="Shubham">
+<button (click)="getInputInfo(inputInfo)" >Get Info</button>
+
+getInputInfo(my: any){
+    console.log(my.value)
+  }

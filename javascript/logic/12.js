@@ -1,0 +1,1 @@
+console.log("http:\\\\www.kodegod.com\\new in C language")

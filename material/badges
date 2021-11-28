@@ -1,0 +1,50 @@
+import { MatBadgeModule } from '@angular/material/badge';
+
+<div>
+    <span matBadge="5">Notificatios</span>
+</div>
+----------------------------------------------------------------------------------------
+<div>
+    <span matBadge="5" matBadgePosition="below before">Notificatios</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below after">Notificatios</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above before">Notificatios</span>
+</div>
+
+----------------------------------------------------------------------------------------
+<div>
+    <span matBadge="5" matBadgeSize="small">Notificatios</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="medium">Notificatios</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeSize="large">Notificatios</span>
+</div>
+
+----------------------------------------------------------------------------------------
+<div>
+    <span matBadge="5" matBadgeColor="primary">Notificatios</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeColor="accent">Notificatios</span>
+</div>
+<div>
+    <span matBadge="5" matBadgeColor="warn">Notificatios</span>
+</div>
+----------------------------------------------------------------------------------------
+<div>
+    <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false">Notificatios</span>
+</div> // overlap for icon not for text
+----------------------------------------------------------------------------------------
+<div>
+    <span [matBadge]="notifications" matBadgeColor="primary">Notificatios</span>
+</div> property binding .ts- notifications=2;
+----------------------------------------------------------------------------------------
+<div>
+    <span [matBadge]="notifications"[matBadgeHidden]="notifications ==0" matBadgeColor="primary">Notificatios</span>
+</div>  
+----------------------------------------------------------------------------------------

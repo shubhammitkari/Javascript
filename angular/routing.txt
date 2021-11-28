@@ -1,0 +1,70 @@
+module.ts
+1.import { Routes, RouterModule } from '@angular/router';
+2. before @NgModule
+	const routes: Routes = [
+	  { 
+	  	path: '', component: LoginComponent,
+	  },
+	  {
+	    path: 'login', component: LoginComponent,
+	  },
+	  {
+	    path: 'update-password', component: ForgotComponent,
+	  }
+	  ];
+
+3. imports: [RouterModule.forRoot(routes)],
+4. routerLink="/",routerLink="/about",
+
+*Styling Active Router
+
+1. routerLinkActive="active"  // to active the component.
+2. [routerLinkActiveOptions]="{exact:true}"  //(apply for default route)to active only one component at a time.
+
+*Rotes Redirection
+
+const routes: Routes = [
+	  { 
+	  	path: '', redirectTo: 'login', pathMatch: 'full' 
+	  },
+	  {
+	    path: 'login', component: LoginComponent,
+	  },
+	  ];
+
+*Page Not found (wield card route): write to the end of all path
+
+		{
+	    	path: '**', component: PageNotFoundComponent,
+	  	},
+
+*Child Routes
+
+	  {
+	    path: 'login', component: LoginComponent,
+	  },
+	  {
+	    path: 'products',  children:[
+	    	{ 
+	    		path: '', component: ProductsComponent,
+	    	},
+	    	{
+	    		path: 'mobile', component: MobileComponent,
+	    	}];
+	  }
+
+	  <a routerLink="mobile"></a>
+
+* Navigating Route
+
+x.component.ts
+
+1. import {Router}
+2. constructor(private router: Router){}
+3. fun(){ 
+		this.router.navigate(['componentpathname']);
+	}
+
+
+
+

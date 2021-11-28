@@ -1,0 +1,13 @@
+There are 3 types of Directives
+1. Componensts Directives: Directive with own Components
+    a. Components
+
+2. Structural Directives: Manipulating the dom elements
+    a.ngIf
+    b.ngFor
+    c.ngSwitch
+
+3. Attribute Directives: Changes the look and behaviour of the dom
+    a.ngStyle
+    b.ngClass
+

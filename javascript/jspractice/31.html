@@ -1,0 +1,34 @@
+
+<!-- <div class="name">Vishal</div>
+<div class="name">Amit</div>
+<div class="name">Bhavit</div>
+<script>
+    let name=document.getElementsByTagName("div");
+    //console.log(name);
+    // for(var i=0;i<name.length;i++){
+    //     console.log(name[i].innerHTML);
+    // }
+
+    //name[2].innerHTML ="Shubham";
+
+</script> -->
+
+<div id="first">
+    <div class="name">Vishal</div>
+    <div class="name">Amit</div>
+    <div class="name">Bhavit</div>
+</div>
+
+<div id="second">
+    <div class="name">Vishal</div>
+    <div class="name">Amit</div>
+    <div class="name">Bhavit</div>
+</div>
+
+<script>
+    let divId= document.getElementById('second');
+    let name=divId.getElementsByTagName("div");
+    for(var i=0;i<name.length;i++){
+        console.log(name[i].innerHTML);
+    }
+</script>

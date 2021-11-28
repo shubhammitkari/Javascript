@@ -1,0 +1,25 @@
+048. program to accept a number from user and print if it is prime or not.
+061. program to accept a number from user and print it’s factorial, check if it prime or not , and print it’s fibbonacci series using different functions.
+062. program to calculate square and cube of a given number in C language
+063. program to accept two numbers from user and swap their values using call by reference method in C l
+083. program to accept two strings and compare them 
+085. program to print length of a given string 
+085. program to print length of a given string 
+086. program to copy a string into another string
+087. program to convert given string to UPPER CASE 
+088. program to convert givern string to lower case in C language
+089. program to concatinate two strings in C language
+090. program to count no, of alphlabets, digits, special symbols in C language
+091. program to compare two strings in C language
+091. program to compare two strings in C language
+092. program to count all vowels present in the string in C language
+093. program to reverse the given string in C language
+093. program to reverse the given string in C language
+094. program to check if the given string is palindrome or not
+095. Define a structure Employee having elements emp_id, name,etc. Accept data and reprint it
+096. Define a structure Student having fields roll_no, name, marks, etc, for 5 students, accept data and reprint
+097. Define a structure Employee having elements emp_id, name, DOB, DOJ etc. Accept data and reprint it. (use structure within structure)
+098. Write a program to read and write a file character by character.
+099. Write a program to read and write a file line by line.
+100. Merge two files by store data into third one
+101. Write a program accept a file name from user and print content of that file

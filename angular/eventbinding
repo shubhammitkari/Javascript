@@ -1,0 +1,22 @@
+<button (click)="onAddCart()">Add to Cart</button>
+
+<br><br>
+
+<p>{{msg}}</p>
+
+<input type="text" value="myinputtext" (click)="onInputClick($event)">
+
+<button value="Laptop" (click)="onAddCart($event)">Laptop</button>
+<button value="TV" (click)="onAddCart($event)">TV</button>
+<button value="washing Machine" (click)="onAddCart($event)">washing Machine</button>
+<p>{{msg}}</p>
+
+<!------.ts---- -->
+msg:string="";
+
+  onAddCart(event: any){
+    this.msg=event.target.value + " Added in Cart"
+  }
+  onInputClick(event: any){
+    console.log(event.target.value);
+  }

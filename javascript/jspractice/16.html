@@ -1,0 +1,20 @@
+<script>
+    var arr=[
+        ["vishal","Delhi"],
+        ["Amit","Noida"],
+        ["Karan","Pune"],
+    ]
+document.write("<table border='1'>");
+document.write("<tr><th>Sr.No.</th><th>Name</th><th>City</th></tr>");
+var k=1;
+
+for(var i=0;i<3;i++){
+    document.write("<tr>");
+    document.write("<td>"+k+"</td>");  
+    for(var j=0;j<2;j++){
+        document.write("<td>"+arr[i][j]+"</td>");
+    } 
+    k++;
+}
+document.write("</table>");
+</script>

@@ -1,0 +1,17 @@
+<ul id="box">
+    <li>Shubham</li>
+    <li>Amit</li>
+</ul>
+<script>
+    let box=document.getElementById('box');
+    let li=document.createElement('li');
+    li.textContent='karan';
+    //let pos=box.firstElementChild;
+    let pos=box.firstElementChild.nextElementSibling;
+    box.insertBefore(li,pos);
+
+
+//apend add element at the last
+//insertBefore add element at given position.
+
+</script>

@@ -1,0 +1,32 @@
+<!-- constructor
+<script>
+    function User(fn,ln){
+        this.fname=fn;
+        this.lname=ln;
+    }
+
+    User.prototype.age=20;
+    var obj1=new User("shubham","mitkari");
+
+    var obj2=new User("karan","vidhate");
+    
+    console.log(obj2);
+</script> -->
+
+<!-- Function -->
+<script>
+    function User(fn,ln){
+        this.fname=fn;
+        this.lname=ln;
+    }
+
+    User.prototype.fullName=function(){
+        return this.fname+""+this.lname;
+    };
+    var obj1=new User("shubham","mitkari");
+
+    var obj2=new User("karan","vidhate");
+    
+    console.log(obj2.fullName());
+</script>
+

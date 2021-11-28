@@ -1,0 +1,31 @@
+<ul id="box">
+    <li>Shubham</li>
+    <li>Amit</li>
+    <li>sumit</li>
+</ul>
+
+<input type="text" id="name"/>
+<input type="button" onclick="addNewLi()" value="Add More">
+
+<!-- <script>
+    function addNewLi(){
+        let liBox=document.getElementById("box");
+        let newLi=document.createElement("li");
+        let name=document.getElementById("name").value;
+        let liText=document.createTextNode(name);
+        newLi.appendChild(liText);
+        liBox.appendChild(newLi);
+        document.getElementById("name").value="";
+    }
+</script> -->
+<script>
+    function addNewLi(){
+        let liBox=document.getElementById("box");
+        let newLi=document.createElement("li");
+        newLi.textContent=document.getElementById("name").value;
+        
+        liBox.appendChild(newLi);
+        document.getElementById("name").value="";
+    }
+</script>
+

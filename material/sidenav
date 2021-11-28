@@ -1,0 +1,45 @@
+/* import { MatSidenavModule } from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
+
+
+.ts
+opened=false;
+
+.css
+span{
+    padding-right: 1rem;
+}
+
+mat-sidenav-container{
+    height: 100%;
+}
+
+mat-sidenav,mat-sidenav-content{
+    padding: 16px;
+}
+
+mat-sidenav{
+    background-color: lightcoral;
+    width: 200px;
+}
+
+.html
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">Siednav</mat-sidenav>
+    <mat-sidenav-content>Main
+        <button (click)="opened=!opened">Toggle Opened</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">Siednav</mat-sidenav>
+    <mat-sidenav-content>Main
+        <button (click)="opened=!opened">Toggle Opened</button>
+        <button (click)="sidenav.open()">Open</button>
+        <button (click)="sidenav.close()">Close</button>
+        <button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- mode=over,push,side --> */

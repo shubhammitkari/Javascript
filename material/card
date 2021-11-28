@@ -1,0 +1,12 @@
+import { MatCardModule } from '@angular/material/card';
+<mat-card>
+    <mat-card-title>
+        card title
+    </mat-card-title>
+    <mat-card-content>
+        This is the card content
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-flat-button>Login</button>
+    </mat-card-actions>
+</mat-card>

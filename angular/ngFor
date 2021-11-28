@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product Image</th>
+            <th>Product Name</th>
+            <th>Product ID</th>
+            <th>Product Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mypro of products">
+            <td><img src="{{mypro.proimg}}" width="70" height="50" alt=""></td>
+            <td>{{mypro.name}}</td>
+            <td>{{mypro.id}}</td>
+            <td>{{mypro.price}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+products=[
+    {proimg:'./assets/images/laptop.jpg',name:'Laptop',id:'pro01',price:15000},
+    {proimg:'./assets/images/mobile.jpeg',name:'Mobile',id:'pro02',price:8000},
+    {proimg:'./assets/images/tv.jpg',name:'TV',id:'pro03',price:12000},
+    {proimg:'./assets/images/washing.jpg',name:'Washing Machine',id:'pro04',price:20000},
+  ]

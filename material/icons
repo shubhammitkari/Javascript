@@ -1,0 +1,9 @@
+import { MatIconModule } from '@angular/material/icon';
+
+<div>
+    <mat-icon color="primary">question_answer</mat-icon>>
+</div>
+
+
+https://fonts.google.com/icons?selected=Material+Icons 
+https://material.angular.io/components/icon/overview

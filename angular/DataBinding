@@ -1,0 +1,65 @@
+2 types of data binding:
+
+-----one way data binding-----
+
+ts(component) -> html(view)
+a. string interpolation{{data}}
+
+.html
+<p>
+    My name is {{dynName}}
+</p>
+<br><br>
+{{4+5}}
+<br><br>
+{{"Welcome"+dynName}}
+<br><br>
+{{dynName.length}}
+<br><br>
+{{dynName.toUpperCase()}}
+<br><br>
+{{myMethod()}}
+<br><br>
+My app status is {{appStatus? "Online" : "Offline"}}
+<br><br>
+My app status is {{appStatus? status1 : status2}}
+
+.ts 
+dynName:string="shubham"
+
+  myMethod(){
+    return "My Name is "+this.dynName
+  }
+
+  appStatus:boolean=true;
+  status1="Online";
+  status2="Offline";
+
+b. property binding [property]='data'
+
+html(view) -> ts (component)
+c. event binding (event)="expression"
+
+.html
+<input type="text" value="{{dynName}}"> //interpolation
+<input type="text" [value]="dynName">   // property
+<br><br>
+<input type="text" bind-value="dynName"> 
+
+difference in interpolation nd property is :
+in interpolation we use only string values and can use sting cacatination 
+but in property we can use non string like boolean,
+and can't use sting cacatination
+
+<input type="text" [disabled]="true" name="" bind-value="dynName"> 
+<input type="text" [hidden] ="true" name="" bind-value="dynName">
+we can't use interpolation in disabled nd hidden property we have to use only property.
+
+<input type="text"  name="" [value]="appStatus? status1 : status2"> 
+
+-----two way data binding-----
+
+ts(component) <-> html(view) 
+
+[(ngModel)]="data"
+

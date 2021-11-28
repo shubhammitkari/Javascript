@@ -1,0 +1,22 @@
+import { MatButtonModule } from '@angular/material/button'; 
+
+<div>
+    <button mat-button>Click me !</button>
+    <button mat-raised-button>Click me !</button>
+    <button mat-flat-button>Click me !</button>
+    <button mat-stroked-button>Click me !</button>
+</div>
+
+<div>
+    <button mat-icon-button>Click me !</button>
+    <button mat-fab>Click me !</button>
+    <button mat-mini-fab>mini</button>
+</div>
+
+<div>
+    <button color="primary" mat-raised-button>Click me !</button>
+    <button color="accent" mat-raised-button>Click me !</button>
+    <button color="warn" disableRipple mat-raised-button>Click me !</button>  //no ripple effect
+</div>
+
+

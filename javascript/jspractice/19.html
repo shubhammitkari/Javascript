@@ -1,0 +1,18 @@
+<script>
+    var arr={
+        fname:"vishal",
+        lname:"patil",
+        city:["pune","Mumbai"],
+        age:20,
+        education:{
+            pg:"B.Tech",
+            ug:"Test",
+        },
+        fullname: function(){
+            return this.fname+' '+this.lname;
+        }
+    };
+    document.write(arr.city[1]);
+    document.write(arr.education.pg);
+    document.write(arr.fullname());
+</script>

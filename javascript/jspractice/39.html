@@ -1,0 +1,28 @@
+<input type="button" id="btn"  class="abc" onclick="test()" value="ab">
+
+<script>
+
+    //let btn=document.getElementById('btn');
+    // btn.addEventListener('click',function(){
+    //     console.log('test click')
+    // });
+    // btn.addEventListener('click',function(){
+    //     console.log(this.getAttribute('class'))
+    // });
+
+    //btn.addEventListener('click',test1);
+
+    // function test(){
+    //     console.log('test click')
+    // }
+
+    let btn=document.getElementById('btn');
+    btn.addEventListener('click',test);
+
+    function test(){
+        console.log('test click')
+        let btn=document.getElementById('btn');
+        btn.removeEventListener('click',test); 
+    }
+     
+</script>

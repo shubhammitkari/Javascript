@@ -1,0 +1,16 @@
+<ul id="box">
+    <li>Shubham</li>
+    <li>Amit</li>
+    <li>sumit</li>
+</ul>
+
+<script>
+    let box=document.getElementById('box');
+    let pos=box.firstElementChild.nextElementSibling;
+
+    let li=document.createElement('li');
+    li.textContent="Ram";
+
+    box.replaceChild(li,pos);
+    
+</script>
